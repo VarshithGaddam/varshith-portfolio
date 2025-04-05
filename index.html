@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Varshith Gaddam - AI & Data Science Enthusiast | Problem Solver | Innovator">
+    <title>Varshith Gaddam - AI Innovator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">VG</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-switch">
+            <label for="theme-switch">🌙</label>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero section">
+        <div class="hero-content">
+            <h1>Hi, I'm Varshith Gaddam</h1>
+            <p class="tagline" data-text="AI & Data Science Enthusiast | Problem Solver | Innovator">AI & Data Science Enthusiast | Problem Solver | Innovator</p>
+            <a href="#projects" class="cta-btn">Explore My Work</a>
+        </div>
+        <canvas id="particles"></canvas>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section hidden">
+        <h2>About Me</h2>
+        <p>AI & Data Science student passionate about leveraging cutting-edge technologies to solve real-world challenges. With a strong foundation in programming, machine learning, and data science, I’m eager to drive innovation through AI-powered solutions.</p>
+        <a href="assets/resume.pdf" download class="resume-btn">Download Resume</a>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section hidden">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-python"></i>
+                <span class="skill-name">Python</span>
+                <span class="skill-level">Proficient</span>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-brain"></i>
+                <span class="skill-name">Machine Learning</span>
+                <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-network-wired"></i>
+                <span class="skill-name">Deep Learning</span>
+                <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-react"></i>
+                <span class="skill-name">React.js</span>
+                <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-eye"></i>
+                <span class="skill-name">Computer Vision</span>
+                <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-comments"></i>
+                <span class="skill-name">NLP</span>
+                <span class="skill-level">Intermediate</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section hidden">
+        <h2>Projects</h2>
+        <div class="project-filters">
+            <button data-filter="all">All</button>
+            <button data-filter="ai">AI/ML</button>
+            <button data-filter="web">Web Dev</button>
+        </div>
+        <div class="project-grid">
+            <!-- Updated Web/AI Project with GIF -->
+            <div class="project-card" data-category="web ai">
+                <img src="https://github.com/VarshithGaddam/gifs/blob/main/ssss%20-%20Made%20with%20Clipchamp.gif?raw=true" alt="LMS Gamification GIF" class="project-img">
+                <h3>LMS Student Gamification Portal</h3>
+                <p>AI-driven portal with game-based mechanics using FastAPI, React, and PostgreSQL.</p>
+                <button class="details-btn">Details</button>
+            </div>
+            <!-- Updated AI Project with GIF -->
+            <div class="project-card" data-category="ai">
+                <img src="https://github.com/VarshithGaddam/gifs/blob/main/17-26-45%20(1).gif?raw=true" alt="YoLOv8 Sheep Detection GIF" class="project-img">
+                <h3>YoLOv8 Sheep Detection</h3>
+                <p>Real-time sheep counting system with YOLOv8 and OpenCV.</p>
+                <button class="details-btn">Details</button>
+            </div>
+            <!-- Updated AI Project with GIF -->
+            <div class="project-card" data-category="ai">
+                <img src="https://github.com/VarshithGaddam/gifs/blob/main/Untitled%20video%20-%20Made%20with%20Clipchamp%20(1).gif?raw=true" alt="SquatPoseNet GIF" class="project-img">
+                <h3>SquatPoseNet</h3>
+                <p>AI-powered squat form analysis using GNN and TensorFlow.</p>
+                <button class="details-btn">Details</button>
+            </div>
+            <!-- Updated AI Project with GIF -->
+            <div class="project-card" data-category="ai">
+                <img src="https://github.com/VarshithGaddam/gifs/blob/main/vvv%20-%20Made%20with%20Clipchamp.gif?raw=true" alt="GAN Image Generation GIF" class="project-img">
+                <h3>GAN Image Generation</h3>
+                <p>High-resolution image synthesis using DCGAN and StyleGAN.</p>
+                <button class="details-btn">Details</button>
+            </div>
+            <!-- Existing Machine Learning Projects -->
+            <div class="project-card" data-category="web ai">
+                <img src="https://raw.githubusercontent.com/VarshithGaddam/gifs/refs/heads/main/17-17-11.gif" alt="Paisa Controller GIF" class="project-img">
+                <h3>Paisa Controller</h3>
+                <p>Paisa Controller is an AI-powered personal finance management web application designed to help users track expenses, manage budgets, and gain actionable financial insights. Built as a hackathon project, it combines a sleek, modern UI with advanced features like receipt scanning via OCR, voice command input, and predictive analytics.</p>
+                <button class="details-btn">Details</button>
+            </div>
+            <div class="project-card" data-category="ai">
+                <img src="https://raw.githubusercontent.com/VarshithGaddam/Data_Leakage_Prevention_with_MachineLearning/refs/heads/main/imgs/4.png" alt="Data Leakage Visualization" class="project-img">
+                <h3>Data Leakage Prevention</h3>
+                <p>Built a model to detect and prevent sensitive data leaks.</p>
+                <button class="details-btn">Details</button>
+            </div>
+            <div class="project-card" data-category="ai">
+                <img src="https://raw.githubusercontent.com/VarshithGaddam/Detection_of_Learning_Disability_System/refs/heads/main/imgs/5.png" alt="Learning Disability Visualization" class="project-img">
+                <h3>Learning Disability Detection System</h3>
+                <p>AI-based identification of learning disabilities.</p>
+                <button class="details-btn">Details</button>
+            </div>
+            <div class="project-card" data-category="ai">
+                <img src="https://raw.githubusercontent.com/VarshithGaddam/Fuel_Efficiency_Analysis_with_Speed/refs/heads/main/imgs/23.png" alt="Fuel Efficiency Visualization" class="project-img">
+                <h3>Fuel Efficiency Analysis</h3>
+                <p>Explored the relationship between speed and fuel consumption.</p>
+                <button class="details-btn">Details</button>
+            </div>
+            <div class="project-card" data-category="ai">
+                <img src="https://raw.githubusercontent.com/VarshithGaddam/bird-flu-prediction-rajasthan/refs/heads/main/imgs/2.png" alt="Bird Flu Prediction Visualization" class="project-img">
+                <h3>Bird Flu Prediction</h3>
+                <p>Developed a forecasting model for potential outbreaks.</p>
+                <button class="details-btn">Details</button>
+            </div>
+            <div class="project-card" data-category="ai">
+                <img src="https://raw.githubusercontent.com/VarshithGaddam/Nipah-Virus-Dataset-Analysis-and-Prediction-Using-Machine-Learning/refs/heads/main/imgs/12.png" alt="Nipah Virus Prediction Visualization" class="project-img">
+                <h3>Nipah Virus Prediction</h3>
+                <p>Designed an early warning system for disease outbreaks.</p>
+                <button class="details-btn">Details</button>
+            </div>
+            <div class="project-card" data-category="ai">
+                <img src="https://raw.githubusercontent.com/VarshithGaddam/Household_Energy_Consumption_Analysis_2024/refs/heads/main/imgs/1.png" alt="Energy Consumption Visualization" class="project-img">
+                <h3>Household Energy Consumption Analysis</h3>
+                <p>Optimized energy usage through predictive analysis.</p>
+                <button class="details-btn">Details</button>
+            </div>
+            <div class="project-card" data-category="ai">
+                <img src="https://raw.githubusercontent.com/VarshithGaddam/stock-analysis/refs/heads/main/AAPL_chart.png" alt="Stock Analysis Visualization" class="project-img">
+                <h3>Stock Analysis Project</h3>
+                <p>A multi-agent system built with AutoGen to fetch, analyze, and visualize stock data using the yfinance API and Google Gemini API for AI-powered insights. This project demonstrates a basic agentic framework that: Fetches real-time stock data. Calculates financial metrics (e.g., returns, volatility, moving averages). Generates enhanced visualizations (price trends and volume). Provides professional analysis and investment recommendations.</p>
+                <button class="details-btn">Details</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section hidden">
+        <h2>Achievements</h2>
+        <div class="achievement-grid">
+            <div class="achievement-card">
+                <img src="https://github.com/VarshithGaddam/gifs/blob/main/jan.jpg?raw=true" alt="Hackathon Winner" class="achievement-img">
+                <h3>1x Hackathon Winner (Dec 2024)</h3>
+                <p>Developed an AI-driven Eco Environment solution.</p>
+            </div>
+            <div class="achievement-card">
+                <img src="assets/leetcode-problems.png" alt="LeetCode Problems" class="achievement-img">
+                <h3>LeetCode: 350+ Problems Solved</h3>
+                <p>Mastered problem-solving skills across various domains.</p>
+            </div>
+            <div class="achievement-card">
+                <img src="assets/consistency-streak.png" alt="Consistency Streak" class="achievement-img">
+                <h3>270+ Day Consistency Streak</h3>
+                <p>Demonstrated dedication to daily coding practice.</p>
+            </div>
+            <div class="achievement-card">
+                <img src="assets/acm.jpg" alt="ACM Membership" class="achievement-img">
+                <h3>ACM Student Chapter Member</h3>
+                <p>Active contributor to the tech community.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section hidden">
+        <h2>Contact Me</h2>
+        <form id="contact-form" class="contact-form">
+            <input type="text" placeholder="Name" name="name" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <textarea placeholder="Message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/22varshith-gaddam-4842622a2" target="_blank">LinkedIn</a>
+            <a href="https://github.com/VarshithGaddam" target="_blank">GitHub</a>
+            <a href="https://leetcode.com/u/Varsh800/" target="_blank">LeetCode</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Varshith Gaddam. All rights reserved.</p>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Smooth Scroll for Navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Intersection Observer for Animations
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    if (entry.target.classList.contains('project-card')) {
+                        entry.target.classList.add('flip-in');
+                    }
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.section, .project-card').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Typing Animation for Tagline
+        const tagline = document.querySelector('.tagline');
+        const text = tagline.getAttribute('data-text');
+        let i = 0;
+        function typeWriter() {
+            if (i < text.length) {
+                tagline.textContent += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100);
+            }
+        }
+        window.addEventListener('load', typeWriter);
+
+        // Firebase Configuration with Explicit Database URL
+        const firebaseConfig = {
+            apiKey: "AIzaSyBvnT2DQJ4SNnFI0SRlvy82gZ6v2K37t_g",
+            authDomain: "contact-form-website-204b1.firebaseapp.com",
+            projectId: "contact-form-website-204b1",
+            storageBucket: "contact-form-website-204b1.firebasestorage.app",
+            messagingSenderId: "967546336709",
+            appId: "1:967546336709:web:6eb54f14e4ff44272a47ac",
+            measurementId: "G-6CF2WVFCXJ",
+            databaseURL: "https://contact-form-website-204b1-default-rtdb.firebaseio.com/"
+        };
+
+        // Initialize Firebase
+        try {
+            firebase.initializeApp(firebaseConfig);
+            const database = firebase.database();
+            const messagesRef = database.ref('messages');
+
+            // Contact Form Submission Handler
+            document.getElementById('contact-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const name = this.querySelector('input[name="name"]').value;
+                const email = this.querySelector('input[name="email"]').value;
+                const message = this.querySelector('textarea[name="message"]').value;
+
+                if (name && email && message) {
+                    const newMessageRef = messagesRef.push();
+                    newMessageRef.set({
+                        name: name,
+                        email: email,
+                        message: message,
+                        timestamp: Date.now()
+                    }, (error) => {
+                        if (error) {
+                            alert('Error sending message. Please try again.');
+                        } else {
+                            alert(`Thank you, ${name}! Your message has been received.`);
+                            this.reset();
+                            const confirmation = document.createElement('p');
+                            confirmation.textContent = 'Message sent successfully! I’ll respond soon.';
+                            confirmation.style.color = '#00D4FF';
+                            confirmation.style.marginTop = '1rem';
+                            this.appendChild(confirmation);
+                            setTimeout(() => confirmation.remove(), 5000);
+                        }
+                    });
+                } else {
+                    alert('Please fill in all fields.');
+                }
+            });
+
+            // Optional: Log data to console
+            messagesRef.on('value', (snapshot) => {
+                const data = snapshot.val();
+                console.log('Submitted Messages:', data);
+            });
+        } catch (error) {
+            console.error('Firebase initialization error:', error);
+            alert('Failed to connect to the server. Please try again later.');
+        }
+    </script>
+</body>
+</html>

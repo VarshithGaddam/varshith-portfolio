@@ -583,6 +583,25 @@ body.light footer:hover {
     background: #E0E0E0;
 }
 
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.footer-socials a {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.footer-socials a:hover {
+    color: #00D4FF;
+    transform: scale(1.2);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
@@ -594,11 +613,17 @@ body.light footer:hover {
         min-height: 100vh;
     }
 
+    .hero::after {
+        background-size: cover;
+        background-position: center;
+    }
+
     .hero-content {
         padding: 1.5rem;
         background: rgba(0, 0, 0, 0.7);
         max-width: 100%;
         width: 90%;
+        margin-left: 1rem;
     }
 
     .hero-content h1 {
@@ -607,6 +632,11 @@ body.light footer:hover {
 
     .tagline {
         font-size: 1rem;
+    }
+
+    #particles {
+        width: 100% !important;
+        height: 100% !important;
     }
 
     .skills-grid {
